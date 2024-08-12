@@ -1,0 +1,32 @@
+.item{
+    width: 70%;
+    margin-right: 25px;
+}
+
+.item img{
+    width: 300px;
+    height: 300px;
+}
+.item p{
+    margin-left: 10px;
+}
+.item-name{
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: #374151;
+    font-size: 18px;
+    font-weight: 600;
+}
+.item-rating{
+    margin-top: 0px;
+    color: #8c8c8c;
+    font-size: 18px;
+    font-weight: 500;
+    /* text-decoration: line-through; */
+}
+
+.item:hover{
+    transform: scale(1.1);
+    transition: 0.6s;
+    cursor: pointer;
+}

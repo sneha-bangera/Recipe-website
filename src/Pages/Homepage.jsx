@@ -1,4 +1,7 @@
 import './Homepage.css'
+import Popular from '../Components/Popular'
+import High_rated from '../Components/High_rated'
+import Low_cal from '../Components/Low_cal'
 
 function Homepage() {
 
@@ -17,7 +20,13 @@ function Homepage() {
                 <span>DIFFICULTY<br />LEVEL</span>
             </div>
         </div>
-
+        <Popular/>
+        <High_rated/>
+        <Low_cal/>
+        {/* <div className='popular-search'>
+            <h2>POPULAR SEARCHES</h2>
+            <div className='popular-options'></div>
+        </div> */}
       </div>
     </>
   )
