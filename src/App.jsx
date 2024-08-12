@@ -1,6 +1,7 @@
 import './App.css'
-import Data from './data'
+import Data from './Components/Data'
 import Navbar from './Navbar'
+import Homepage from './Pages/Homepage'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       {/* <Data/> */}
       <Navbar/>
+      <Homepage/>
     </>
   )
 }
