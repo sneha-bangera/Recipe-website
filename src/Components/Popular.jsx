@@ -1,7 +1,7 @@
 import React from "react"
 import { useState, useEffect } from "react";
 import './Popular.css'
-import Item from "./Item";
+import Item from "./Item"; 
 
 function Popular() {
 

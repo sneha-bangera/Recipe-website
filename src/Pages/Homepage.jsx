@@ -9,7 +9,7 @@ function Homepage() {
     <>
       <div className='home-pg'>
 
-        <div className='home-category'>
+        {/* <div className='home-category'>
             <h3>SEARCH BY CATEGORY</h3>
             <div className='category-options'>
                 <span>BREAKFAST<br />RECIPES</span>
@@ -19,7 +19,7 @@ function Homepage() {
                 <span>CUISINE</span>
                 <span>DIFFICULTY<br />LEVEL</span>
             </div>
-        </div>
+        </div> */}
         <Popular/>
         <High_rated/>
         <Low_cal/>
