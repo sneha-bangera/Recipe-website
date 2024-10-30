@@ -17,7 +17,7 @@ function Popular() {
   return (
     <div className="popular-search">
         <h2>POPULAR SEARCHES</h2>
-      <hr />
+      <hr/>
       <div className="popular-recipe">
         {recipes.map((item, i) => {
           if(i<30 && parseInt(item.reviewCount)>82){

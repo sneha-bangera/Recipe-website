@@ -1,18 +1,25 @@
 import './Navbar.css'
 import icon from './assets/search_icon.png'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { SearchBar } from './Components/SearchBar'
+import { SearchResultsList } from './Components/SearchResultList'
 
 function Navbar() {
+
+  const [results, setResults] = useState([]);
 
   return (
     <>
         <div className='navbar'>
             <Link to='/' style={{textDecoration: 'none'}}><p>Recipe<span style={{color: "white"}}>.com</span></p></Link>
             <div className='nav-search'>
-                <input type="text" placeholder='Search for recipes...'/>
-                <img src={icon} alt="" className='nav-search-btn'/>
+              <SearchBar setResults={setResults} />
+              {results && results.length > 0 && <SearchResultsList results={results} />}
             </div>
-            <button className='nav-category'>Category</button>
+            <a className='nav-category'>
+              <span>Category</span>
+            </a>
         </div>
     </>
   )
