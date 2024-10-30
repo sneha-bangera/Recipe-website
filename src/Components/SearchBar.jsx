@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import { FaSearch } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
 
 import "./SearchBar.css";
 
@@ -10,12 +10,12 @@ export const SearchBar = ({ setResults }) => {
     fetch('https://dummyjson.com/recipes')
       .then((response) => response.json())
       .then((json) => {
-        const results = json.filter((recipes) => {
+        const results = json.recipes.filter((recipe) => {
           return (
             value &&
-            recipes &&
-            recipes.name &&
-            recipes.name.toLowerCase().includes(value)
+            recipe &&
+            recipe.name &&
+            recipe.name.toLowerCase().includes(value)
           );
         });
         console.log(results)
@@ -30,9 +30,9 @@ export const SearchBar = ({ setResults }) => {
 
   return (
     <div className="input-wrapper">
-      {/* <FaSearch id="search-icon" /> */}
+      <FaSearch id="search-icon" style={{color:"black"}}/>
       <input
-        placeholder="Type to search..."
+        placeholder="Search for recipes..."
         value={input}
         onChange={(e) => handleChange(e.target.value)}
       />

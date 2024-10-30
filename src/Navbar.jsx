@@ -1,9 +1,9 @@
 import './Navbar.css'
-import icon from './assets/search_icon.png'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { SearchBar } from './Components/SearchBar'
 import { SearchResultsList } from './Components/SearchResultList'
+import { CgProfile } from "react-icons/cg";
 
 function Navbar() {
 
@@ -15,12 +15,16 @@ function Navbar() {
             <Link to='/' style={{textDecoration: 'none'}}><p>Recipe<span style={{color: "white"}}>.com</span></p></Link>
             <div className='nav-search'>
               <SearchBar setResults={setResults} />
-              {results && results.length > 0 && <SearchResultsList results={results} />}
+              {/* {results && results.length > 0 && <SearchResultsList results={results} />} */}
             </div>
-            <a className='nav-category'>
-              <span>Category</span>
-            </a>
+            <Link to="/login" style={{textDecoration:'none'}}>
+            <button className='nav-login'>
+                <CgProfile style={{fontSize:25}}/>
+                <span>Login</span>
+            </button>
+            </Link>
         </div>
+        {results && results.length > 0 && <SearchResultsList results={results} />}
     </>
   )
 }

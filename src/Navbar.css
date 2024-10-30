@@ -25,132 +25,33 @@
     margin-left: 100px;
 }
 
-.nav-search input{
-    height: 38px;
-    width: 90%;
-    border: none;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    padding-left: 20px;
-}
-
-.nav-search-btn{
-    height: 40px;
-    border: none;
-    font-size: 15px;
-    align-items: center;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    background-color: 	#a5c90f;
+.nav-login{
+    position: absolute;
+    right: 60px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px 20px;
+    border-radius: 10px;
     cursor: pointer;
-}
-
-.nav-search:hover{
-    border: 2px solid rgb(218, 64, 3) ;
-}
-
-.nav-category{
-    height: 40px;
-    border-radius: 8px;
+    text-decoration: none;
     border: none;
-    margin-left: 170px;
-    margin-right: 40px;
-    font-size: 1.2rem;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: #fff;
-    cursor: pointer;
-    background-color: transparent;
-    border: #cacaca solid 1px;
-    position: relative;
-    display: block;
-    overflow: hidden;
-    /* background-color: #6f9c3d; */
-    /* background: linear-gradient(90deg, green, lightgreen); */
+    top: 30px;
+    margin-bottom: 50px;
+}
+.nav-login span{
+    font-family: 'poppins';
+    font-size: 1.15rem;
+    padding-left: 10px;
+    text-decoration: none;
+    /* padding-bottom: 10px; */
 }
 
-.nav-category span{
-    position: relative;
-    z-index: 1;
-    transition: 1s;
-}
-.nav-category:hover span{
-    color: black;
-}
 
-a .wave{
-    position: absolute;
-    top: calc(100% + 22px);
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #00aeff;
-    transition: 1s;
-}
 
-a:hover .wave{
-    top: 0;
-}
 
-a .wave:before{
-    content: '';
-    position: absolute;
-    top: -22px;
-    left: 0;
-    width: 100%;
-    height: 22px;
-    background: url('./assets/wave.png');
-    animation: animate 0.5s linear infinite;
-}
 
-@keyframes animate{
-    0%{
-        background-position-x: 0;
-        /* background-position-y: -22px; */
-    }
-    100%{
-        background-position-x: 118px;
-    }
-}
 
-/* .nav-category::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    border-radius: 8px;
-    background-color: #03a9f4;
-    z-index: -1;
-}
 
-.nav-category:hover::before{
-    background-color: #03a9f4;
-    animation: loadWave 4s linear;
-} */
 
-@keyframes loadWaves{
-    0%{
-        clip-path: polygon(0 100%, 0 92%, 10% 90%, 23% 88%, 38% 93%, 46% 90%, 57% 87%, 68% 85%, 75% 84%, 83% 86%, 92% 91%, 100% 94%, 100% 100%)
-    }
-    10%{
-        clip-path: polygon(0 100%, 0 81%, 9% 88%, 18% 90%, 33% 84%, 44% 81%, 52% 82%, 62% 83%, 71% 86%, 81% 90%, 90% 90%, 100% 84%, 100% 100%);
-    }
-    20%{
-        clip-path: polygon(0 100%, 0 81%, 9% 73%, 18% 68%, 30% 69%, 39% 74%, 58% 79%, 66% 75%, 74% 75%, 85% 80%, 94% 80%, 100% 74%, 100% 100%);
-    }
-    40%{
-        clip-path: polygon(0 100%, 0 50%, 12% 56%, 21% 60%, 35% 59%, 43% 54%, 52% 49%, 59% 49%, 67% 51%, 72% 54%, 85% 59%, 100% 61%, 100% 100%);
-    }
-    60%{
-        clip-path: polygon(0 100%, 0 28%, 11% 37%, 27% 44%, 38% 43%, 45% 36%, 55% 31%, 66% 34%, 76% 36%, 84% 40%, 92% 45%, 100% 47%, 100% 100%);
-    }
-    80%{
-        clip-path: polygon(0 100%, 0 28%, 7% 18%, 15% 10%, 24% 8%, 34% 9%, 54% 19%, 74% 23%, 84% 19%, 92% 23%, 96% 26%, 100% 28%, 100% 100%);
-    }
-    100%{
-        clip-path: polygon(0 100%, 0 0, 9% 0, 19% 0, 30% 0, 53% 0, 60% 0, 66% 0, 73% 0, 84% 0, 94% 0, 100% 0, 100% 100%);
-    }
-};
