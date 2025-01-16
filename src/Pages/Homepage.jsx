@@ -2,13 +2,14 @@ import './Homepage.css'
 import Popular from '../Components/Popular'
 import High_rated from '../Components/High_rated'
 import Low_cal from '../Components/Low_cal'
+import hero_img from '../assets/recipe_banner.png'
 
 function Homepage() {
 
   return (
     <>
       <div className='home-pg'>
-
+      <img src={hero_img} alt="" className='hero_img'/>
         {/* <div className='home-category'>
             <h3>SEARCH BY CATEGORY</h3>
             <div className='category-options'>

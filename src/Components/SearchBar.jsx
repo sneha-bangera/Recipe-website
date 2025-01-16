@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
-
 import "./SearchBar.css";
 
 export const SearchBar = ({ setResults }) => {
@@ -27,6 +26,7 @@ export const SearchBar = ({ setResults }) => {
     setInput(value);
     fetchData(value);
   };
+
 
   return (
     <div className="input-wrapper">

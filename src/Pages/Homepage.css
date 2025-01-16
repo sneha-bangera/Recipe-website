@@ -2,6 +2,9 @@
     /* background: linear-gradient(180deg, white, #ffb366); */
     height: 100vh;
 }
+.hero_img{
+    width: 100%;
+}
 .home-category{
     padding-top: 30px;
     padding-bottom: 50px;

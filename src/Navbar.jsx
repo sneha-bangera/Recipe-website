@@ -18,10 +18,10 @@ function Navbar() {
               {/* {results && results.length > 0 && <SearchResultsList results={results} />} */}
             </div>
             <Link to="/login" style={{textDecoration:'none'}}>
-            <button className='nav-login'>
+            {/* <button className='nav-login'>
                 <CgProfile style={{fontSize:25}}/>
                 <span>Login</span>
-            </button>
+            </button> */}
             </Link>
         </div>
         {results && results.length > 0 && <SearchResultsList results={results} />}

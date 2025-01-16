@@ -1,47 +1,50 @@
-.login{
+.loginsignup{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 70vh;
+    height: 85vh;
     font-size: 'poppins';
 }
 
-.login-container{
+.loginsignup-container{
     width: 300px;
     border-radius: 20px;
-    height: 350px;
-    padding: 40px 40px;
+    /* height: 280px; */
+    padding: 40px 40px 30px 40px;
     margin: auto;
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
-.login-container h2{
+.loginsignup-container h2{
     margin-top: 0;
     font-family: 'poppins';
     margin-left: 10px;
+    margin-bottom: 30px;
 }
-.login-fields{
+.loginsignup-fields{
     display: flex;
     flex-direction: column;
     gap: 15px;
     margin-top: 30px;
 }
 
-.login-fields input{
+.loginsignup-fields input{
     width: 260px;
     height: 35px;
     padding-left: 20px;
+    /* margin-bottom: 10px; */
     border: 1px solid #c9c9c9;
     border-radius: 10px;
     outline: none;
     color: #5c5c5c;
+    align-items: center;
     font-size: 15px;
 }
 
-.login-container button{
+.loginsignup-container button{
     width: 260px;
     height: 40px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 15px;
     border-radius: 30px;
     background: rgb(0, 173, 0);
@@ -50,19 +53,33 @@
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 
-.login-agree{
+.loginsignup-agree{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 25px;
+    margin-top: 5px;
+    padding-bottom: 0;
     margin-bottom: 0px;
     color: #5c5c5c;
     font-size: 15px;
     font-weight: 500; 
 }
-.login-agree input{
+.loginsignup-agree input{
     width: 20px;
+    margin: 0;
+    margin-right: 5px;
+}
+
+.loginsignup-login{
+    font-size: 1.1rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
