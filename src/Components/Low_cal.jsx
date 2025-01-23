@@ -13,7 +13,7 @@ function Low_cal() {
         .then((data) => setRecipes(data.recipes))
         .catch((err) => console.error('Error fetching recipes:', err));
     }, []);
- 
+    
   return (
     <div className="popular-search" style={{paddingTop:50}}>
         <h2>LOW CALORIE</h2>

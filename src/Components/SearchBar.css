@@ -26,3 +26,16 @@
   #search-icon {
     color: royalblue;
   }
+
+  @media screen and (max-width: 375px){
+    input{
+      height: 10px;
+      font-size: 10px;
+    }
+    .input-wrapper{
+      height: 25px;
+    }
+    #search-icon{
+      font-size: 10px;
+    }
+  }

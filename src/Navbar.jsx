@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <>
         <div className='navbar'>
-            <Link to='/' style={{textDecoration: 'none'}}><p>Recipe<span style={{color: "white"}}>.com</span></p></Link>
+            <Link to='/' style={{textDecoration: 'none'}}><i><p>Recipe<span style={{color: "white"}}>.com</span></p></i></Link>
             <div className='nav-search'>
               <SearchBar setResults={setResults} />
               {/* {results && results.length > 0 && <SearchResultsList results={results} />} */}

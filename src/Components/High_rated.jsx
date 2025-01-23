@@ -13,7 +13,7 @@ function High_rated() {
         .then((data) => setRecipes(data.recipes))
         .catch((err) => console.error('Error fetching recipes:', err));
     }, []);
- 
+    
   return (
     <div className="popular-search" style={{paddingTop:50}}>
         <h2>HIGHLY RATED</h2>

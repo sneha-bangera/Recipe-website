@@ -23,6 +23,32 @@
     margin-top: 50px;
     gap: 50px;
     display: grid;
+    margin-left: 20px;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-around;
+}
+
+/* responsive */
+@media screen and (max-width: 375px){
+    .popular-recipe{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px
+    }
+    .popular-search{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .popular-recipe{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .popular-recipe{
+        /* grid-template-columns: 1fr 1fr; */
+        gap: 5px
+    }
 }

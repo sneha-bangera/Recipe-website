@@ -2,7 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80px;
+    /* height: 80px; */
+    height: 10vh;
     width: 100%;
     background-color: #2A2C29;
     /* background-color: #ffffff; */
@@ -11,12 +12,12 @@
 
 .navbar p{
     position: absolute;
-    top: 0;
+    top: 4px;
     left: 0;
     color: #FF7F00;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
-    font-family: 'poppins';
+    font-family: 'dm serif display';
     margin-left: 40px;
     padding: 0;
     margin-top: 20px;
@@ -53,6 +54,32 @@
     text-decoration: none;
     /* padding-bottom: 10px; */
 }
+
+@media screen and (max-width: 768px){
+    .navbar p{
+        margin-top: 15px;
+        margin-left: 25px;
+    }
+    .nav-search{
+        height: 20px;
+        margin-bottom: 17px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .navbar p{
+        margin-top: 15px;
+        margin-left: 25px;
+        font-size: 15px;
+    }
+    .nav-search{
+        height: 5px;
+        margin-bottom: 17px;
+        margin-left: 50px;
+        width: 50%;
+    }
+}
+
 
 
 

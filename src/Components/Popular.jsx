@@ -13,7 +13,7 @@ function Popular() {
         .then((data) => setRecipes(data.recipes))
         .catch((err) => console.error('Error fetching recipes:', err));
     }, []);
- 
+     
   return (
     <div className="popular-search">
         <h2>POPULAR SEARCHES</h2>
